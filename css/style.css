@@ -1,0 +1,103 @@
+/* style of main text: Wikipedia Viewer */ 
+h1 {
+  color: #e3f2fd; 
+  font-size: 40px;
+  text-transform: none;
+}
+
+/* main background style */
+body {
+  
+  /* background color if browser doesn't support gradient */
+  background-color: #00212e;
+  
+  /* gradient style for background if browser supports it */
+  background-image: linear-gradient(to right, #00212e, #7986CB);
+  
+  /* main font-stlye for text */
+  font-family: "Raleway", sans-serif;
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* box behind search bar */
+#search-bar-box {
+  background-color: #00212e;
+  width: 450px;
+  height: 35px;
+  position: relative;
+  display: block;
+  padding: 10px 10px;
+  text-align: center;
+  margin: auto;
+}
+
+/* style for text input field */ 
+#input {
+  width: 400px;
+  height: 30px;
+  margin-right: 80px;
+  outline: none;
+  background-color: #e3f2fd;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+/* style for search icon */ 
+#search-icon {
+  float: right;
+  color: #e3f2fd;
+  margin-top: -32px;
+  font-size: 30px;
+}
+    
+#search-btn, #random {
+    color: #e3f2fd;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#search-btn:hover {
+  color: aqua;
+}
+
+/* styles for hyperlinks*/
+a {
+  text-decoration: none; 
+ 
+}
+
+/* unvisited link */ 
+a:link {
+  color: #e3f2fd;
+}
+
+/* mouse over link */
+a:hover {
+  color: aqua;
+}
+
+/* active link */ 
+a:active {
+  color: #e3f2fd;
+}
+
+/* visited link */
+a:visited {
+  color: #e3f2fd;
+}
+
+/* style for search results */
+.results {
+  width: 850px;
+  height: auto;
+  margin: 10px auto;
+  padding: 0px 25px;
+  border:3px solid white;
+  position: relative;
+  text-align: left;
+  font-size: 20px;
+  font-family: "Raleway", sans-serif; 
+} 
+

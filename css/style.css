@@ -3,6 +3,8 @@ h1 {
   color: #e3f2fd; 
   font-size: 40px;
   text-transform: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: lighter;
 }
 
 /* main background style */
@@ -15,10 +17,10 @@ body {
   background-image: linear-gradient(to right, #00212e, #7986CB);
   
   /* main font-stlye for text */
-  font-family: "Raleway", sans-serif;
+  font-family: "Questrial", sans-serif;
   font-size: 25px;
   text-align: center;
-  font-weight: bold;
+  
 }
 
 /* box behind search bar */
@@ -41,7 +43,7 @@ body {
   outline: none;
   background-color: #e3f2fd;
   font-size: 20px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Questrial", sans-serif;
 }
 
 /* style for search icon */ 
@@ -98,6 +100,6 @@ a:visited {
   position: relative;
   text-align: left;
   font-size: 20px;
-  font-family: "Raleway", sans-serif; 
+  font-family: "Questrial", sans-serif; 
 } 
 

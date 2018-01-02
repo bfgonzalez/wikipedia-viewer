@@ -1,9 +1,8 @@
 /* style of main text: Wikipedia Viewer */ 
 h1 {
-  color: #e3f2fd; 
   font-size: 40px;
   text-transform: none;
-  font-family: "Roboto", sans-serif;
+  font-family: "Lobster", sans-serif;
   font-weight: lighter;
 }
 
@@ -20,11 +19,12 @@ body {
   font-family: "Questrial", sans-serif;
   font-size: 25px;
   text-align: center;
+  color: white;
 }
 
-/* box behind search bar */
+/* search bar container */
 #search-bar-box {
-  background-color: #00212e;
+  background-color: transparent;
   width: 450px;
   height: 35px;
   position: relative;
@@ -36,57 +36,64 @@ body {
 
 /* style for text input field */ 
 #input {
-  width: 400px;
+  width: 415px;
   height: 30px;
   margin-right: 80px;
   outline: none;
-  background-color: #e3f2fd;
+  border: none;
+  border-bottom: 2px solid white;
+  background: transparent;
   font-size: 20px;
   font-family: "Questrial", sans-serif;
+  color: white;
+}
+
+#input::-webkit-input-placeholder {
+  color: white;
+  opacity: 0.8;
 }
 
 /* style for search icon */ 
 #search-icon {
   float: right;
-  color: #e3f2fd;
+  color: white;
   margin-top: -32px;
   font-size: 30px;
 }
     
 #search-btn, #random {
-    color: #e3f2fd;
     display: inline-block;
     cursor: pointer;
+    border: 2px solid white;
+    padding: 3px;
 }
 
 #search-btn:hover {
-  color: aqua;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#random:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* styles for hyperlinks*/
 a {
   text-decoration: none; 
- 
 }
 
 /* unvisited link */ 
 a:link {
-  color: #e3f2fd;
-}
-
-/* mouse over link */
-a:hover {
-  color: aqua;
+  color: white;
 }
 
 /* active link */ 
 a:active {
-  color: #e3f2fd;
+  color: white;
 }
 
 /* visited link */
 a:visited {
-  color: #e3f2fd;
+  color: white;
 }
 
 /* style for search results */
@@ -94,11 +101,19 @@ a:visited {
   width: 850px;
   height: auto;
   margin: 10px auto;
-  padding: 0px 25px;
-  border: 1px solid white;
+  padding: 0.5% 2%;
+  border-left: 3px solid white;
   position: relative;
   text-align: left;
   font-size: 20px;
   font-family: "Questrial", sans-serif; 
 } 
 
+.results:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-left: 3px solid aqua;
+}
+
+.results h2 {
+  color: aqua;
+}

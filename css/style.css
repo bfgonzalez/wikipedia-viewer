@@ -1,119 +1,124 @@
-/* style of main text: Wikipedia Viewer */ 
+/* variables for colors */
+:root {
+  --purple: #7986CB;
+  --white: #fafafa;
+  --black: #424242;
+}
+
+body {
+  background-color: var(--white);
+  font-family: sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  color: var(--white);
+}
+
 h1 {
-  font-size: 40px;
-  text-transform: none;
-  font-family: "Lobster", sans-serif;
+  color: var(--purple);
+  font-size: 2rem;
   font-weight: lighter;
 }
 
-/* main background style */
-body {
-  
-  /* background color if browser doesn't support gradient */
-  background-color: #00212e;
-  
-  /* gradient style for background if browser supports it */
-  background-image: linear-gradient(to right, #00212e, #7986CB);
-  
-  /* main font-stlye for text */
-  font-family: "Questrial", sans-serif;
-  font-size: 25px;
-  text-align: center;
-  color: white;
-}
-
-/* search bar container */
 #search-bar-box {
-  background-color: transparent;
-  width: 450px;
-  height: 35px;
-  position: relative;
+  width: 30rem;
+  height: 2rem;
   display: block;
-  padding: 10px 10px;
-  text-align: center;
   margin: auto;
+  padding: 2rem;
 }
 
-/* style for text input field */ 
-#input {
-  width: 415px;
-  height: 30px;
-  margin-right: 80px;
+input {
+  width: 30rem;
+  height: 2rem;
+  color: var(--purple);
+  font-size: 1.25rem;
   outline: none;
   border: none;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid var(--purple);
   background: transparent;
-  font-size: 20px;
-  font-family: "Questrial", sans-serif;
-  color: white;
 }
 
-#input::-webkit-input-placeholder {
-  color: white;
+input::-webkit-input-placeholder {
+  color: var(--purple);
   opacity: 0.8;
 }
 
-/* style for search icon */ 
+/* style for search icon */
 #search-icon {
   float: right;
-  color: white;
-  margin-top: -32px;
-  font-size: 30px;
+  color: var(--purple);
+  margin-top: 0.75rem;
+  font-size: 1.5rem;
 }
-    
-#search-btn, #random {
+
+button {
+    color: var(--white);
+    font-size: 1rem;
     display: inline-block;
+    background: var(--purple);
+    margin: 0 0.1rem;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+    border: none;
+    outline: none;
     cursor: pointer;
-    border: 2px solid white;
-    padding: 3px;
+    border: 2px solid var(--purple);
 }
 
-#search-btn:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+#random-btn {
+  background: var(--white);
+  font-weight: bold;
 }
 
-#random:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+#search-btn:hover, #random-btn:hover {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
 }
 
 /* styles for hyperlinks*/
 a {
-  text-decoration: none; 
+  text-decoration: none;
 }
 
-/* unvisited link */ 
+/* unvisited link */
 a:link {
-  color: white;
+  color: var(--purple);
 }
 
-/* active link */ 
+/* active link */
 a:active {
-  color: white;
+  color: var(--purple);
 }
 
 /* visited link */
 a:visited {
-  color: white;
+  color: var(--purple);
 }
 
 /* style for search results */
 .results {
-  width: 850px;
+  width: auto;
   height: auto;
-  margin: 10px auto;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  margin: 1rem auto;
   padding: 0.5% 2%;
-  border-left: 3px solid white;
   position: relative;
   text-align: left;
-  font-size: 20px;
-  font-family: "Questrial", sans-serif; 
-} 
 
-.results:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-left: 3px solid aqua;
 }
 
-.results h2 {
-  color: aqua;
+.results:hover {
+  background: var(--purple);
+  color: var(--white);
+}
+
+#result-list {
+  margin-top: 3rem;
+}
+
+/* media queries */
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
 }

@@ -1,49 +1,23 @@
 <!DOCTYPE html>
-<html lang="en" >
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Wikipedia Viewer</title>
+    <meta name="description" content="Wikipedia Viewer">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <h1> Wikipedia Viewer </h1>
+    <div id="search-bar-box">
+      <input id="input" type="text" placeholder="Search">
+    </div>
 
-<head>
-  <meta charset="UTF-8">
-  <title>Wikipedia Viewer </title>
-  
-  
-  
-      <link rel="stylesheet" href="css/style.css">
+    <button id="random-btn"><a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">RANDOM</a></button>
+    <button id="search-btn">SEARCH</button>
+    <div id="result-list"></div>
 
-  <script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
-</head>
-
-<body>
-
-  <!-- links for fonts -->
-<link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet" type="text/css">
-
-<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
-
-<!-- -->
-<h1> Wikipedia Viewer </h1>
-
-<!-- Search bar -->
-<div id="search-bar-box">
-  <input id="input" type="text" placeholder="Search">
-  <i id="search-icon" class="fas fa-search"></i>
-</div>
-
-<!-- Navigation icons under search bar -->
-<div id="search-btn">Search</div>
-<div id="random"><a id="get-random" href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">Random <i class="fas fa-random"></i></a></div><!--clicking random opens article in new tab -->
-
-<!-- Container for drop-down search results -->
-<div id="result-list">
-</div>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-
-  
-
-    <script  src="js/index.js"></script>
-
-
-
-
-</body>
-
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src="js/index.js"></script>
+  </body>
 </html>

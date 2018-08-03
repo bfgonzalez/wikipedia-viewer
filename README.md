@@ -1,5 +1,5 @@
-<h1> Wikipedia Viewer </h1>
+# Wikipedia Viewer
 A simple Wikipedia viewer made using HTML, CSS, JavaScript, jQuery, and the Wiki API. This project was completed in partial fulfillment of the requirements for the FreeCodeCamp Frontend Web Development curriculum 
-<br><br>
-<a href="https://bfgonzalez.github.io/wikipedia-viewer" target="_blank" rel="noopener">[Demo]</a>
-<img src="https://s13.postimg.org/t4xvbjcx3/Wikipedia_Viewer.png" alt="Wikipedia Viewer"></a>
+
+[Demo](<"https://bfgonzalez.github.io/wikipedia-viewer">)
+<img src="https://lh3.googleusercontent.com/rshH5jJG5MsHphxKvqwbL0Wb68BDv4hRAUvdLTV1ZW_n6GALpRWHuSewoUUk2Vw7Gn3I4n89R_iq7toVzdOdutHVidRHQzTNjD4T5wo5uzBNFs3SOMz1vwneCDbfnZXnWLqlYHIKGQ=w2400" alt="Wikipedia Viewer">

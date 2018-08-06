@@ -1,9 +1,7 @@
-
-$(document).ready(function() {
 $("#search-btn").click(function() {
 
-  var searchTerm = $("#input").val();
-  var wikiURL = 'https://en.wikipedia.org/w/api.php?action=opensearch&search=' + searchTerm + '&format=json&callback=?';
+  var searchTerm = document.getElementById("input").value;
+  var wikiURL = "https://en.wikipedia.org/w/api.php?action=opensearch&search=" + searchTerm + "&format=json&callback=?";
 
     $.ajax({
       type: "GET",
@@ -23,10 +21,10 @@ $("#search-btn").click(function() {
       }
     });
   });
-});
 
-$(document).keypress(function (e) {
-    if (e.which == 13) {
-      $("#search-btn").click();
-    }
+document.addEventListener("keyup", function(e) {
+  event.preventDefault();
+  if (e.keyCode === 13) {
+    document.getElementById("search-btn").click();
+  }
 });
